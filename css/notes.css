@@ -1,0 +1,126 @@
+html,
+body { 
+    font-family: 'Open Sans', sans-serif; 
+    
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear; 
+    -o-transition: all .2s linear; 
+    transition: all .2s linear; 
+}
+
+hgroup { margin-bottom: 52px; }
+
+h1 { font-family: 'Pacifico', cursive; }
+
+h2 { 
+    font-weight: 300; 
+    margin-bottom: 12px; 
+}
+
+form.well { padding: 12px; }
+
+form input[type="text"],
+form select { 
+    color: #888; 
+    height: 44px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+form input[type="submit"] { 
+    line-height: 1.6; 
+    margin: 0;
+    width: 100%; 
+} 
+
+@media (min-width: 48em) { 
+    form input[type="text"],
+    form select { 
+        color: #555;
+        margin: 0;
+        width: 39.15%; 
+        
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+    }
+    
+    form select { color: #bbb; }
+    
+    form select:active,
+    form select:focus { color: #555; }
+    
+    form input.btn { width: 20.8%; }
+}
+
+form ::-webkit-input-placeholder { color: #bbb; }
+
+form :-ms-input-placeholder { color: #bbb; }
+
+form ::-moz-placeholder { color: #bbb; }
+
+form :-moz-placeholder { color: #bbb; }
+
+.control-icons { margin: 36px 0 12px; }
+
+.control-icons .icon { 
+    border-radius: 3px;
+    padding: 10px; 
+}
+
+.control-icons .icon:hover { 
+    background: #dfdfdf;
+    color: #fff;
+    text-decoration: none;
+    
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+/* Prevent the text contents of draggable elements from being selectable. */
+[draggable] {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: element;
+    -khtml-user-drag: element;
+}
+
+ul li {
+	border-bottom: 1px solid #ddd;
+    cursor: move;
+	padding: 10px;
+    
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -moz-transition: -moz-transform 0.2s ease-out;
+    -ms-transition: -ms-transform 0.2s ease-out;
+    -o-transition: -o-transform 0.2s ease-out;
+    transition: -o-transform 0.2s ease-out;
+}
+
+ul li:before { 
+    content: "\f0c9";
+    color: #ccc;
+    font-family: FontAwesome;
+    font-size: 1rem;
+    margin-right: 12px;
+}
+
+#notes .note.over { border: 2px dashed #000; }
+
+#notes .note.moving {
+    opacity: 0.25;
+    
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+}

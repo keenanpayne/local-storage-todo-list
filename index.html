@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="True">
+
+    <title>LocalList: Your local storage to-do list.</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/icons.css">
+    <link rel="stylesheet" type="text/css" href="./css/concise.css">
+    <link rel="stylesheet" type="text/css" href="./css/notes.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,400,600">
+
+    <script type="text/javascript" src="./js/notes.js"></script>
+</head>
+
+<body class="container align-center">
+    <hgroup>
+        <h1 class="giga text-center">LocalList</h1>
+        
+        <h2 class="text-center color-gray">Your local storage to-do list.</h2>
+    </hgroup>
+    
+    <form class="well bg-light-gray no-margin">
+        <input type="text" placeholder="enter your note" id="note" autofocus required />
+        
+        <select id="color">
+            <option value="white">pick a color:</option>
+            <option value="pink">pink</option>
+            <option value="LightGrey">grey</option>
+            <option value="lightYellow">yellow</option>
+        </select><!-- #color -->
+        
+        <input type="submit" id="submit" class="btn btn-small bg-green" value="Save Note">
+    </form>
+
+    <div class="text-right control-icons">
+        <span class="tooltip-top border-radius" data-hint="Delete all Notes">
+            <a href="" class="icon icon-2x trash-o" id="delete-notes"></a>
+        </span>
+        
+        <span class="tooltip-top border-radius" data-hint="Export all Notes">
+            <a href="" class="icon icon-2x upload" id="export-notes"></a>
+        </span>
+        
+        <span class="tooltip-top border-radius" data-hint="Download CSV">
+            <a href="" id="results"></a>
+        </span>
+    </div><!-- .text-right -->
+    
+    <ul class="list-unstyled" id="notes"></ul>
+</body>
+</html>
